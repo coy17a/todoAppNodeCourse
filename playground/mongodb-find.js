@@ -22,3 +22,24 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err,client)=>{
 
     // client.close();
 });
+
+
+
+
+// newUser.save().then((doc)=>{
+//     console.log("New user created",doc)
+// }, (e)=>{
+//     console.log('Unable to create new user',e)
+// });
+
+// var newTodo = new Todo({
+//     text: 'Bike 1:15 mins',
+    
+// });
+
+// newTodo.save().then((doc) => {
+//     console.log('Saved todo', doc);
+
+// }, (e) => {
+//     console.log('unable to save')
+// });
