@@ -4,7 +4,7 @@ var Todo = mongoose.model('Todo', {
     text: {
         type: String,
         require: true,
-        minlength:1,
+        minlength:5,
         trim: true
     },
     completed: {
