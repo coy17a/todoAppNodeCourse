@@ -46,6 +46,18 @@ app.get('/todos/:id',(req,res)=>{
 
 })
 
+//delete /todos/id Route
+
+app.delete('/todos/:id',(req,res)=>{
+    var id = req.params.id;
+    if(!ObjectID.isValid(id)){
+        return res.status(404).send('Id Not Valid')
+    }
+    Todo.findByIdAndRemove(id).then((todo)=>{
+        res.status(200).send({todo});
+    }).catch((e)=>res.status(400).send())
+});
+
 app.listen(port, ()=>{
     console.log(`started on port${port}`)
 })
