@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    {{!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> --}}
+</head>
+<body> 
+   <h1> Edit Todo</h1>
+
+ <h3> 
+    <ul>
+         <li> 
+           <form method="POST" action="/todos/{{todo._id}}?_method=PUT">
+           <input type="text" name="text" value="{{todo.text}}">
+           <input type="text" name="completed" value="{{todo.completed}}">
+           <button > Submit </button>
+            </form> 
+        </li>
+     </ul>
+     
+ </h3>
+    
+ 
+ <footer>
+     <p> Created by Alejo Coy @2018 </p>
+ </footer>
+ </body>
+ 
+ </html>
